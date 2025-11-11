@@ -1,0 +1,20 @@
+{
+  "welcome_message": "Initializing REL Databricks Asset Bundle with standardized DEV/STG/PROD/ANALYTICS/USR targets...",
+  "success_message": "Bundle initialized. Next: `databricks bundle validate` and then `databricks bundle deploy -t DEV`.",
+  "min_databricks_cli_version": "v0.212.1",
+  "version": 1,
+  "properties": {
+    "project_name": { "type": "string", "description": "Project name used for bundle.name" },
+    "workspace_host_dev": { "type": "string", "description": "REL DEV workspace URL (e.g., https://rel-dev.cloud.databricks.com)" },
+    "workspace_host_usr": { "type": "string", "description": "REL USR (personal) workspace URL" },
+    "workspace_host_stg": { "type": "string", "description": "REL STG workspace URL" },
+    "workspace_host_prod": { "type": "string", "description": "REL PROD workspace URL" },
+    "workspace_host_analytics": { "type": "string", "description": "REL ANALYTICS workspace URL" },
+    "service_principal_name": { "type": "string", "description": "Service principal name for PROD run_as" },
+    "dev_compute_id": { "type": "string", "description": "Cluster/Compute ID for DEV (optional)" },
+    "usr_compute_id": { "type": "string", "description": "Cluster/Compute ID for USR (optional)" },
+    "stg_compute_id": { "type": "string", "description": "Cluster/Compute ID for STG (optional)" },
+    "prod_compute_id": { "type": "string", "description": "Cluster/Compute ID for PROD (optional)" },
+    "analytics_warehouse_id": { "type": "string", "description": "SQL Warehouse ID used in ANALYTICS (optional)" }
+  }
+}
